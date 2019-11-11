@@ -1,0 +1,11 @@
+#include "progessevent.h"
+
+ProgessEvent::ProgessEvent(int progress) : QEvent()
+{
+
+}
+
+int ProgessEvent::progress() const
+{
+    return m_progress;
+}

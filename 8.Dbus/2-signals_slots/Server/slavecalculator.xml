@@ -1,0 +1,21 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node name ="com.blikoon.calulatornode">
+  <interface name="com.blikoon.CalculatorInterface">
+    <signal name="productResult">
+      <arg name="product" type="d" direction="out"/>
+    </signal>
+    <signal name="divisionResult">
+      <arg name="quotient" type="d" direction="out"/>
+    </signal>
+    <method name="multiply">
+      <arg type="d" direction="out"/>
+      <arg name="factor1" type="d" direction="in"/>
+      <arg name="factor2" type="d" direction="in"/>
+    </method>
+    <method name="divide">
+      <arg type="d" direction="out"/>
+      <arg name="divident" type="d" direction="in"/>
+      <arg name="divisor" type="d" direction="in"/>
+    </method>
+  </interface>
+</node>
